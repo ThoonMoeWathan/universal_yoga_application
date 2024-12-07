@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical"
+        tools:context=".AddCourseActivity"
+        android:scrollbars="vertical">
+        <TextView
+            android:id="@+id/addTaskHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:text="ADD COURSE"
+            android:textColor="@color/darkPurple"
+            android:textSize="24sp" />
+        <EditText
+            android:id="@+id/editCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter New Course Here!"
+            android:gravity="top"
+            android:padding="12dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/addTaskHeading"
+            android:background="@drawable/purple_border"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/title_day"
+            android:text="Choose Day"
+            android:gravity="top"
+            android:padding="12dp"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editCourse"/>
+        <Spinner
+            android:id="@+id/spinner_day"
+            android:gravity="top"
+            android:padding="12dp"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/title_day"/>
+        <LinearLayout
+            android:id="@+id/time_linear_layout"
+            android:gravity="top"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/spinner_day">
+            <Button
+                android:id="@+id/btn_time_selection"
+                android:backgroundTint="@color/darkPurple"
+                android:textColor="@color/white"
+                android:text="Choose Section Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/editCapacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="How Many People Can Attend"
+            android:gravity="top"
+            android:padding="12dp"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:layout_below="@+id/time_linear_layout"
+            android:background="@drawable/purple_border"
+            android:layout_marginTop="16dp"/>
+        <EditText
+            android:id="@+id/editPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price of Course"
+            android:gravity="top"
+            android:padding="12dp"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:layout_below="@+id/editCapacity"
+            android:background="@drawable/purple_border"
+            android:layout_marginTop="16dp"/>
+        <EditText
+            android:id="@+id/editType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type of Course"
+            android:gravity="top"
+            android:padding="12dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/editPrice"
+            android:background="@drawable/purple_border"
+            android:layout_marginTop="16dp"/>
+        <EditText
+            android:id="@+id/editDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:gravity="top"
+            android:padding="12dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/editType"
+            android:background="@drawable/purple_border"
+            android:layout_marginTop="16dp"/>
+        <Button
+            android:backgroundTint="@color/darkPurple"
+            android:textColor="@color/white"
+            android:id="@+id/saveCourseBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/editDescription"
+            android:text="Done"/>
+
+    </RelativeLayout>
+</ScrollView>
+

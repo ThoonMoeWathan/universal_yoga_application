@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_courses"
+        android:icon="@drawable/ic_courses"
+        android:title="Courses" />
+    <item
+        android:id="@+id/menu_instructors"
+        android:icon="@drawable/ic_classes"
+        android:title="Classes" />
+    <item
+        android:id="@+id/item_upload"
+        android:title="Upload"
+        android:icon="@drawable/baseline_cloud_upload_24"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/resetDbBtn"
+        android:title="Reset"
+        android:icon="@drawable/baseline_delete_24"
+        app:showAsAction="never"/>
+</menu>
